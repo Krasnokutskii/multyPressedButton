@@ -45,10 +45,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func setGestures(){
         dueDateGesture = UITapGestureRecognizer(target: self, action: #selector(gesturePresssed(index:)))
         statusGesture = UITapGestureRecognizer(target: self, action: #selector(gesturePresssed(index:)))
-        dueDateGesture?.numberOfTapsRequired = 222
-        dueDateGesture?.numberOfTouchesRequired = 111
-        statusGesture?.numberOfTapsRequired = 44
-        statusGesture?.numberOfTouchesRequired = 22
+        dueDateGesture?.numberOfTapsRequired = 2
+        dueDateGesture?.numberOfTouchesRequired = 1
+        statusGesture?.numberOfTapsRequired = 2
+        statusGesture?.numberOfTouchesRequired = 1
        
         
         
