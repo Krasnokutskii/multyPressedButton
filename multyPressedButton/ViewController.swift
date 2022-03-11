@@ -20,6 +20,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.status.text = "\(data[indexPath.row].status)"
         return cell
     }
+    //some new line
+    
     
 
     @IBOutlet weak var label: UILabel!
@@ -39,6 +41,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tabelView.dataSource = self
         setGestures()
     }
+    
     func setGestures(){
         dueDateGesture = UITapGestureRecognizer(target: self, action: #selector(gesturePresssed(index:)))
         statusGesture = UITapGestureRecognizer(target: self, action: #selector(gesturePresssed(index:)))
@@ -55,6 +58,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         statusGesture?.isEnabled = false
     }
     
+    //more new lines
     @objc private func gesturePresssed(index: Int){
         if let index = gestureIndex{
             label.text = "\(index)"
