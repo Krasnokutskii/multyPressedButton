@@ -6,7 +6,7 @@
 //
 
 import Foundation
-// and here also line
+// and here also  new text here
 struct Order{
     let id: String
     let dueDate: String
@@ -26,6 +26,8 @@ struct Order{
         Order(id: "000011", dueDate: "8:00", status: .waiting),
         Order(id: "000012", dueDate: "8:00", status: .fulfilled),
         Order(id: "000013", dueDate: "2:00", status: .inProgress),
+        Order(id: "000014", dueDate: "3:00", status: .fulfilled),
+        Order(id: "000015", dueDate: "3:00", status: .inProgress),
         Order(id: "000014", dueDate: "3:00", status: .fulfilled),
         Order(id: "000015", dueDate: "3:00", status: .inProgress),
     ]
