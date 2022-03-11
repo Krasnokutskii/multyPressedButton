@@ -13,6 +13,8 @@
 		F7672D7F27D5EB1D006A6349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7672D7D27D5EB1D006A6349 /* Main.storyboard */; };
 		F7672D8127D5EB1F006A6349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7672D8027D5EB1F006A6349 /* Assets.xcassets */; };
 		F7672D8427D5EB1F006A6349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7672D8227D5EB1F006A6349 /* LaunchScreen.storyboard */; };
+		F7FC755127D8D0FB006A4A61 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC755027D8D0FB006A4A61 /* Model.swift */; };
+		F7FC755327D8D82E006A4A61 /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC755227D8D82E006A4A61 /* CustomCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F7672D8027D5EB1F006A6349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7672D8327D5EB1F006A6349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7672D8527D5EB1F006A6349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7FC755027D8D0FB006A4A61 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F7FC755227D8D82E006A4A61 /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				F7672D7727D5EB1D006A6349 /* AppDelegate.swift */,
 				F7672D7927D5EB1D006A6349 /* SceneDelegate.swift */,
 				F7672D7B27D5EB1D006A6349 /* ViewController.swift */,
+				F7FC755227D8D82E006A4A61 /* CustomCellTableViewCell.swift */,
+				F7FC755027D8D0FB006A4A61 /* Model.swift */,
 				F7672D7D27D5EB1D006A6349 /* Main.storyboard */,
 				F7672D8027D5EB1F006A6349 /* Assets.xcassets */,
 				F7672D8227D5EB1F006A6349 /* LaunchScreen.storyboard */,
@@ -141,6 +147,8 @@
 				F7672D7C27D5EB1D006A6349 /* ViewController.swift in Sources */,
 				F7672D7827D5EB1D006A6349 /* AppDelegate.swift in Sources */,
 				F7672D7A27D5EB1D006A6349 /* SceneDelegate.swift in Sources */,
+				F7FC755327D8D82E006A4A61 /* CustomCellTableViewCell.swift in Sources */,
+				F7FC755127D8D0FB006A4A61 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
