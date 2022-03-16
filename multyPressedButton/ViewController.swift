@@ -22,12 +22,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     //some new line
     
+    //github works properly?
     
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var dueDatebutton: UIButton!
-    @IBOutlet weak var statusButton: UIButton!
     @IBOutlet weak var tabelView: UITableView!
+    @IBOutlet weak var statusLable: UILabel!
     
     var dueDateGesture: UITapGestureRecognizer?
     var statusGesture: UITapGestureRecognizer?
@@ -43,19 +44,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func setGestures(){
-        dueDateGesture = UITapGestureRecognizer(target: self, action: #selector(gesturePresssed(index:)))
-        statusGesture = UITapGestureRecognizer(target: self, action: #selector(gesturePresssed(index:)))
-        dueDateGesture?.numberOfTapsRequired = 2
-        dueDateGesture?.numberOfTouchesRequired = 1
-        statusGesture?.numberOfTapsRequired = 2
-        statusGesture?.numberOfTouchesRequired = 1
-       
+        statusLable.isUserInteractionEnabled = true
+        let singleGesture = UITapGestureRecognizer(target: self, action: #selector(gestureTapped(_:)))
+        singleGesture.numberOfTapsRequired = 1
         
+        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(doubleTap(_:)))
+        doubleTap.numberOfTapsRequired = 2
         
-        dueDatebutton?.addGestureRecognizer(dueDateGesture!)
-        statusButton?.addGestureRecognizer(statusGesture!)
-        dueDateGesture?.isEnabled = false
-        statusGesture?.isEnabled = false
+        statusLable.addGestureRecognizer(singleGesture)
+        statusLable.addGestureRecognizer(doubleTap)
+        singleGesture.require(toFail: doubleTap)
     }
     
     //more new lines
@@ -67,6 +65,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     var ascending = true
     var ascendingType: Bool?  = nil
+    
+    @objc func gestureTapped(_ sender: UITapGestureRecognizer){
+        print("Single tap")
+    }
+    
+    @objc func doubleTap(_ sender: UITapGestureRecognizer){
+        print("Double tap")
+    }
+    
+    
     @IBAction func sortButtonPressed(_ sender: UIButton) {
         if sender.tag == 0{
             sortArray(index: 0, ascending:ascending , ascendingType: nil)
